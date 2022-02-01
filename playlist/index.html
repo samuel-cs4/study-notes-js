@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist</title>
+
+  <style>
+
+    /* Trabalhando com ID */
+    #image {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+    }
+
+    /* Trabalhando com CLASS */
+    .head {
+      background: black;
+    }
+
+    /* .btn-group {
+      padding: 2rem;
+    } */
+
+    .btn {
+      margin: 1px !important;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="head">
+    <img 
+      id="image"
+      src="https://logospng.org/download/spotify/logo-spotify-icon-1536.png" 
+      width="250px"
+      height="250px"
+    />
+  </div>
+
+  <div class="btn-group">
+
+    <p>Song</p>
+    <input type="text" name="Song" id="input-song" class="btn">
+
+    <p>Artist</p>
+    <input type="text" name="Artist" id="input-artist" class="btn">
+
+    <br/>
+    <input type="button" value="Add">
+
+  </div>
+
+  <div id="song-list">
+
+    <p><strong>Song - Artist</strong></p>
+
+  </div>
+  
+</body>
+</html>
