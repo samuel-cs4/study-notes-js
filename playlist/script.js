@@ -18,3 +18,33 @@ function addSong() {
   songList.innerHTML += `<p>${song} - ${artist}</p>`
   
 }
+
+// * * * * * * * * * Event Listeners * * * * * * * * * //
+
+// Get `btn-add` button properties
+var btnAdd = window.document.getElementById('btn-add')
+
+// Change backgroud color of button
+function enter() {
+  btnAdd.style.background = '#1aa34a'
+}
+
+// Returns the original backgroud color
+function exit() {
+  btnAdd.style.background = '#1db954'
+}
+
+function click() {
+  // Inputs
+  let inputSong   = window.document.getElementById('input-song')
+  let inputArtist = window.document.getElementById('input-artist')
+
+  // Clear the inputs text area
+  inputSong.value   = ''
+  inputArtist.value = ''
+}
+
+// Create Event listeners to the button
+btnAdd.addEventListener('mouseenter', enter)
+btnAdd.addEventListener('mouseout', exit)
+btnAdd.addEventListener('click', click)
