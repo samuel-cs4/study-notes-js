@@ -1,0 +1,53 @@
+/* Componentes do HTML */
+input {
+  width: 80%;
+  padding: 1rem;
+  margin: 8px 1px 8px 1px; /* Top right bottom left */
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+/* Trabalhando com ID */
+#image {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+#input {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#song-list {
+  background: whitesmoke !important;
+}
+
+#btn-add {
+  color: #fff;
+  background: #1db954;
+  border-color: #1aa34a;
+  text-transform: uppercase;
+  white-space: normal;
+  letter-spacing: 2px;
+  font: bold 12pt Arial;
+  text-align: center;
+  display: block;
+}
+
+/* Trabalhando com CLASS */
+
+.full-body {
+  background: #e4e1e1;
+}
+
+.head {
+  background: black;
+}
+
+.btn {
+  margin: 1px !important;
+}
