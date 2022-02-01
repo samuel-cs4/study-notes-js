@@ -38,6 +38,10 @@ input {
   display: block;
 }
 
+#body {
+  background: #1f1f1f;
+}
+
 /* Trabalhando com CLASS */
 
 .full-body {
@@ -45,7 +49,7 @@ input {
 }
 
 .head {
-  background: black;
+  background: #1f1f1f;
 }
 
 .btn {
