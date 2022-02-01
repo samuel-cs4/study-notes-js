@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Playlist</title>
+  <link rel="shortcut icon" href="https://developer.spotify.com/images/favicon.ico" />
 
   <style>
 
@@ -34,6 +35,18 @@
 
     #song-list {
       background: whitesmoke !important;
+    }
+
+    #btn-add {
+      color: #fff;
+      background: #1db954;
+      border-color: #1aa34a;
+      text-transform: uppercase;
+      white-space: normal;
+      letter-spacing: 2px;
+      font: bold 12pt Arial;
+      text-align: center; 
+      display: block;
     }
 
     /* Trabalhando com CLASS */
@@ -74,10 +87,10 @@
     <input type="text" name="Artist" id="input-artist" class="btn" placeholder="Band, Artist ...">
 
     <input 
+      id="btn-add"
       type="button" 
       value="Add" 
-      onclick="addSong()"
-      style="text-align: center; display: block;">
+      onclick="addSong()">
 
   </div>
 
