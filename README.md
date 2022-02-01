@@ -1,2 +1,3 @@
-# study-notes-js
+# Study Notes - JavaScript
+
 My study notes about JavaScript
