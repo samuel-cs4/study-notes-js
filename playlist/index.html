@@ -8,11 +8,32 @@
 
   <style>
 
+    /* Componentes do HTML */
+    input {
+      width: 80%;
+      padding: 1rem;
+      margin: 8px 1px 8px 1px; /* Top right bottom left */
+      display: flex;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+
     /* Trabalhando com ID */
     #image {
       margin-right: auto;
       margin-left: auto;
       display: block;
+    }
+
+    #input {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    #song-list {
+      background: whitesmoke !important;
     }
 
     /* Trabalhando com CLASS */
@@ -33,36 +54,40 @@
 </head>
 <body>
 
-  <div class="full-body">
-    <div class="head">
-      <img 
-        id="image"
-        src="https://logospng.org/download/spotify/logo-spotify-icon-1536.png" 
-        width="250px"
-        height="250px"
-      />
-    </div>
-
-    <div class="btn-group">
-
-      <p>Song</p>
-      <input type="text" name="Song" id="input-song" class="btn">
-
-      <p>Artist</p>
-      <input type="text" name="Artist" id="input-artist" class="btn">
-
-      <br/>
-      <input type="button" value="Add" onclick="addSong()">
-
-    </div>
-
-    <div id="song-list">
-
-      <p><strong>Song - Artist</strong></p>
-
-    </div>
-
-    <script src="script.js"></script>
+  <!-- Image -->
+  <div class="head">
+    <img 
+      id="image"
+      src="https://logospng.org/download/spotify/logo-spotify-icon-1536.png" 
+      width="250px"
+      height="250px"
+    />
   </div>
+
+  <!-- Inputs -->
+  <div id="input">
+
+    <label for="input-song">Song</label>
+    <input type="text" name="Song" id="input-song" class="btn" placeholder="Music ...">
+
+    <label for="input-artist">Artist</label>
+    <input type="text" name="Artist" id="input-artist" class="btn" placeholder="Band, Artist ...">
+
+    <input 
+      type="button" 
+      value="Add" 
+      onclick="addSong()"
+      style="text-align: center; display: block;">
+
+  </div>
+
+  <!-- List -->
+  <div id="song-list">
+
+    <p><strong>Song - Artist</strong></p>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
