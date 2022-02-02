@@ -57,5 +57,10 @@ input {
 }
 
 .btn {
-  margin: 1px !important;
+  margin: 1rem 0px 1rem 0px !important; /* Top right bottom left */
+}
+
+.label {
+  color: white;
+  font: bold 14pt Sans-serif;
 }
